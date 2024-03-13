@@ -24,6 +24,8 @@ public class Book {
     public void setYearOfPublication(int yearOfPublication) {
         if (yearOfPublication < 2005 || yearOfPublication > 2012) {
             System.out.println("Invalid publishing year" + yearOfPublication);
+        } else {
+            System.out.println(yearOfPublication);
         }
         this.yearOfPublication = yearOfPublication;
     }
