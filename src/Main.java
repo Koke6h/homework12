@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
         Author murakami = new Author("Харуки", "Мкраками");
-        Book book = new Book("1q84","Haruki Murakami",2009);
+        Book book = new Book("1q84",murakami,2009);
         Author bulgakov = new Author("Михаил", "Булгаков");
-        Book book2 = new Book("Мастер и Маргарита", "Михаил Булгаков", 1967);
+        Book book2 = new Book("Мастер и Маргарита", bulgakov, 1967);
         System.out.println("book.name = " + book.getName());
         System.out.println("book.getAuthor() = " + book.getAuthor());
         System.out.println("book.getPages() = " + book.getYearOfPublication());
